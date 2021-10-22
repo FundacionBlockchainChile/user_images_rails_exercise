@@ -1,0 +1,16 @@
+
+<div class="container flex row">
+<h1>List of all Users</h1>
+<% @users.each do |user| %>
+
+  <div class="card m-4" style="width: 18rem;">
+    <img src="<%= user.profile_image %>" class="card-img-top m-1" alt="..." style="border-radius:50%;">
+    <div class="card-body">
+      <h5 class="card-title"><%= user.first_name %> <%= user.last_name %></h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">See my pictures</a>
+    </div>
+  </div>
+
+<% end %>
+</div>

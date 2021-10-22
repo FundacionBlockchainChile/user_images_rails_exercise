@@ -1,0 +1,18 @@
+<div class="container row">
+  <h1>List of All Images</h1>
+
+  <% @images.each do |image| %>
+
+  <div class="card m-4 p-3 bg-dark text-white" style="width: 15rem;border-radius:5%;">
+    <img src="<%= image.url %>" class="card-img-top m-1" alt="..." style="border-radius:5%;">
+    <div class="card-body">
+      <h5 class="card-title"><%= image.title %> </h5>
+      <p class="card-text"><%= image.title %></p>
+      
+    </div>
+  </div>
+
+<% end %>
+
+  
+</div>

@@ -1,0 +1,17 @@
+https://hackernoon.com/how-to-install-bootstrap-5-on-rails-6-ved93530
+
+yarn add bootstrap
+yarn add popper.js
+
+The file:
+app/javascript/stylesheets/application.scss
+Debe ser creado y en su interior debe decir:
+@import "bootstrap"
+
+dentro de:
+app/javascript/packs/application.js
+añade estas lineas:
+import "bootstrap";
+import "../stylesheets/application";
+
+yarn add @popperjs/core
